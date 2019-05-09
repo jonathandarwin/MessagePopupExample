@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".DialogActivity"
+        tools:showIn="@layout/activity_dialog"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is activity that act as dialog.\n you can customize your own dialog\nand also handle the lifecycle of this dialog."
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+</layout>

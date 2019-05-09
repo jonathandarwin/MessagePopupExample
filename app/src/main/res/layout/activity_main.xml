@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        >
+
+        <LinearLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+
+            <!-- TEXT MESSAGE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+
+                <Button
+                    android:id="@+id/btnTextMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Text Message"
+                    />
+
+                <TextView
+                    android:id="@+id/txtMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Ini error message"
+                    android:textColor="@color/colorRed"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+            <!-- TOAST MESSAGE -->
+            <Button
+                android:id="@+id/btnToastMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toast Message"
+                android:layout_margin="10dp"
+                />
+
+            <!-- DIALOG MESSAGE -->
+            <Button
+                android:id="@+id/btnDialogMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dialog Message"
+                android:layout_margin="10dp"
+                />
+
+            <!-- ACTIVITY DIALOG MESSAGE -->
+            <Button
+                android:id="@+id/btnActivityDialogMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activity Dialog Message"
+                android:layout_margin="10dp"
+                />
+
+            <!-- SNACKBAR MESSAGE -->
+            <Button
+                android:id="@+id/btnSnackbarMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snackbar Message"
+                android:layout_margin="10dp"
+                />
+
+            <!-- ACTION SNACKBAR MESSAGE -->
+            <Button
+                android:id="@+id/btnActionSnackbarMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action Snackbar Message"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>
