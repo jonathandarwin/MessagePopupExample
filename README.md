@@ -3,7 +3,7 @@
 This is the simplest way to show the message, can be error message or anything else.
 You only need to set text to TextView or show the TextView that already has the text in it.
 
-<image width="50%" height="50%" src="https://user-images.githubusercontent.com/48744669/57427205-23316a00-724d-11e9-9ff0-37599e04fec4.png"/>
+<image width="30%" height="30%" src="https://user-images.githubusercontent.com/48744669/57427205-23316a00-724d-11e9-9ff0-37599e04fec4.png"/>
  
  ## 2. Toast Message
  The text will be floating below our layout.
