@@ -1,4 +1,4 @@
-# MessagePopupExample
+# Message Popup Example
 ## 1. Text Message
 This is the simplest way to show the message, can be error message or anything else.
 You only need to set text to TextView or show the TextView that already has the text in it.
@@ -15,6 +15,6 @@ You only need to set text to TextView or show the TextView that already has the 
  ## 4. Activity Dialog Message
  Basically it is an activity but act as an dialog. The benefit is you can set your own dialog layout and you can control the lifecycle of your dialog. To implement this dialog, you need to tell the AndroidManifest that the activity dialog theme is @android:style/Theme.Dialog
   
-  <activity android:name=".DialogActivity"
-            android:theme="@android:style/Theme.Dialog"/>
-  
+    <activity android:name=".DialogActivity"
+              android:theme="@android:style/Theme.Dialog"/>
+
