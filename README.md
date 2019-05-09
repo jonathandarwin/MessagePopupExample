@@ -17,4 +17,30 @@ You only need to set text to TextView or show the TextView that already has the 
   
     <activity android:name=".DialogActivity"
               android:theme="@android:style/Theme.Dialog"/>
+and in the activity dialog, you need to extend your activity with 'Activity' class
 
+     public class DialogActivity extends Activity {
+        ....
+     }
+
+You can delete the title bar by using this line of code above setContentView():
+
+     requestWindowFeature(Window.FEATURE_NO_TITLE);
+     
+## 5. Snackbar Message
+Snackbar is a kind of dialog but appear at the bottom of your screen. You can set the duration of your snackbar. So i'll say that snackbar is the combination of dialog + toast.
+
+## 6. Action Snackbar Message
+You can set the action to the snackbar. But remember that when you want user give an certain action to snackbar, you should set the duration with Snackbar.LENGTH_INDEFINITE so the snackbar won't disappear until the user do some action.
+
+     Snackbar snackbar = Snackbar.make(binding.llContainer, "Action snackbar", Snackbar.LENGTH_INDEFINITE)
+
+To handle the action, we use setAction() method :
+   
+     .setAction("Ok", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Snackbar snackbar = Snackbar.make(binding.llContainer, "Okay!", Snackbar.LENGTH_SHORT);
+                            snackbar.show();
+                        }
+                    });
